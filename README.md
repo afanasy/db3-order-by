@@ -1,5 +1,6 @@
-
-
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Node.js Version][node-version-image]][node-version-url]
+[![Linux Build][travis-image]][travis-url]
 
 ### Usage
 ```js
@@ -37,3 +38,10 @@ fruit.sort(orderBy.sort(['name', {id: 'asc'}]))
 
 ### When is this useful?
 If you want to use the same sorting rules for js `Array.sort` and SQL `order by`.
+
+[downloads-image]: https://img.shields.io/npm/dm/db3.svg
+[downloads-url]: https://npmjs.org/package/db3
+[node-version-image]: http://img.shields.io/node/v/db3.svg
+[node-version-url]: http://nodejs.org/download/
+[travis-image]: https://img.shields.io/travis/afanasy/db3/master.svg
+[travis-url]: https://travis-ci.org/afanasy/db3
