@@ -29,11 +29,14 @@ var fruit = [
   {id: 3, name: 'Apple'}
 ]
 fruit.sort(orderBy.sort('name'))
-// fruit will be [{id: 2, name: 'Apple'}, {id: 3, name: 'Apple'}, {id: 1, name: 'Banana'}]
+// fruit will be
+// [{id: 2, name: 'Apple'}, {id: 3, name: 'Apple'}, {id: 1, name: 'Banana'}]
 fruit.sort(orderBy.sort({id: 'desc'}))
-// fruit will be [{id: 3, name: 'Apple'}, {id: 2, name: 'Apple'}, {id: 1, name: 'Banana'}]
+// fruit will be
+// [{id: 3, name: 'Apple'}, {id: 2, name: 'Apple'}, {id: 1, name: 'Banana'}]
 fruit.sort(orderBy.sort(['name', {id: 'asc'}]))
-// fruit will be [{id: 2, name: 'Apple'}, {id: 3, name: 'Apple'}, {id: 1, name: 'Banana'}]
+// fruit will be
+// [{id: 2, name: 'Apple'}, {id: 3, name: 'Apple'}, {id: 1, name: 'Banana'}]
 ```
 
 ### When is this useful?
