@@ -1,19 +1,39 @@
 
-### Usage
-var orderBy = require('js-order-by')
 
+
+### Usage
 ```js
-orderBy(sortingRule)
+var orderBy = require('js-order-by')
+orderBy.query(sortingRule)
 //returns corresponding sql `order by` clause
-orderBy('id')
+orderBy.sort(sortingRule)
+//returns compare function, usable for Array.sort
+```
+#### SQL order by
+```js
+orderBy.query('id')
 // returns `id`
-orderBy({id: 'desc'})
+orderBy.query({id: 'desc'})
 // returns `id desc`
-orderBy({id: 'desc', name: 'asc'})
+orderBy.query({id: 'desc', name: 'asc'})
 // returns `id` desc, `name` asc
-orderBy(['id', {name: 'desc'}])
+orderBy.query(['id', {name: 'desc'}])
 // returns `id`, `name` desc
+```
+#### Array.sort
+```js
+var fruit = [
+  {id: 1, name: 'Banana'},
+  {id: 2, name: 'Apple'},
+  {id: 3, name: 'Apple'}
+]
+fruit.sort(orderBy.sort('name'))
+// fruit will be [{id: 2, name: 'Apple'}, {id: 3, name: 'Apple'}, {id: 1, name: 'Banana'}]
+fruit.sort(orderBy.sort({id: 'desc'}))
+// fruit will be [{id: 3, name: 'Apple'}, {id: 2, name: 'Apple'}, {id: 1, name: 'Banana'}]
+fruit.sort(orderBy.sort(['name', {id: 'asc'}]))
+// fruit will be [{id: 2, name: 'Apple'}, {id: 3, name: 'Apple'}, {id: 1, name: 'Banana'}]
 ```
 
 ### When is this useful?
-If you want to use the same rules both with js arrays and in sql queries
+If you want to use the same sorting rules for js `Array.sort` and SQL `order by`.
