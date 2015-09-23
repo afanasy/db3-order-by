@@ -39,9 +39,9 @@ fruit.sort(orderBy.sort(['name', {id: 'asc'}]))
 ### When is this useful?
 If you want to use the same sorting rules for js `Array.sort` and SQL `order by`.
 
-[downloads-image]: https://img.shields.io/npm/dm/db3.svg
-[downloads-url]: https://npmjs.org/package/db3
-[node-version-image]: http://img.shields.io/node/v/db3.svg
+[downloads-image]: https://img.shields.io/npm/dm/js-order-by.svg
+[downloads-url]: https://npmjs.org/package/js-order-by
+[node-version-image]: http://img.shields.io/node/v/js-order-by.svg
 [node-version-url]: http://nodejs.org/download/
-[travis-image]: https://img.shields.io/travis/afanasy/db3/master.svg
-[travis-url]: https://travis-ci.org/afanasy/db3
+[travis-image]: https://img.shields.io/travis/afanasy/js-order-by/master.svg
+[travis-url]: https://travis-ci.org/afanasy/js-order-by
