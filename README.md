@@ -15,7 +15,7 @@ orderBy.sort(sortingRule)
 orderBy.query('id')
 // returns `id`
 orderBy.query({id: 'desc'})
-// returns `id desc`
+// returns `id` desc
 orderBy.query({id: 'desc', name: 'asc'})
 // returns `id` desc, `name` asc
 orderBy.query(['id', {name: 'desc'}])
