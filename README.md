@@ -4,7 +4,7 @@
 
 ### Usage
 ```js
-var orderBy = require('js-order-by')
+var orderBy = require('db3-order-by')
 orderBy.query(sortingRule)
 //returns corresponding sql `order by` clause
 orderBy.sort(sortingRule)
@@ -42,9 +42,9 @@ fruit.sort(orderBy.sort(['name', {id: 'asc'}]))
 ### When is this useful?
 If you want to use the same sorting rules for js `Array.sort` and SQL `order by`.
 
-[downloads-image]: https://img.shields.io/npm/dm/js-order-by.svg
-[downloads-url]: https://npmjs.org/package/js-order-by
-[node-version-image]: http://img.shields.io/node/v/js-order-by.svg
+[downloads-image]: https://img.shields.io/npm/dm/db3-order-by.svg
+[downloads-url]: https://npmjs.org/package/db3-order-by
+[node-version-image]: http://img.shields.io/node/v/db3-order-by.svg
 [node-version-url]: http://nodejs.org/download/
-[travis-image]: https://img.shields.io/travis/afanasy/js-order-by/master.svg
-[travis-url]: https://travis-ci.org/afanasy/js-order-by
+[travis-image]: https://img.shields.io/travis/afanasy/db3-order-by/master.svg
+[travis-url]: https://travis-ci.org/afanasy/db3-order-by

@@ -1,5 +1,5 @@
 {
-  "name": "js-order-by",
+  "name": "db3-order-by",
   "version": "1.0.1",
   "description": "Sorting rules in JSON format",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/afanasy/js-order-by.git"
+    "url": "https://github.com/afanasy/db3-order-by.git"
   },
   "author": "Afanasii Kurakin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/afanasy/js-order-by/issues"
+    "url": "https://github.com/afanasy/db3-order-by/issues"
   },
-  "homepage": "https://github.com/afanasy/js-order-by",
+  "homepage": "https://github.com/afanasy/db3-order-by",
   "dependencies": {
     "underscore": "*",
     "sqlstring": "*"
