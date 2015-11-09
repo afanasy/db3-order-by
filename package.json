@@ -9,15 +9,15 @@
     "type": "git",
     "url": "https://github.com/afanasy/db3-order-by.git"
   },
-  "author": "Afanasii Kurakin",
+  "author": "Afanasii Kurakin <afanasy@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/afanasy/db3-order-by/issues"
   },
   "homepage": "https://github.com/afanasy/db3-order-by",
   "dependencies": {
-    "underscore": "*",
-    "sqlstring": "*"
+    "underscore": "1.8.3",
+    "sqlstring": "1.0.0"
   },
   "devDependencies": {
     "expect.js": "*",
